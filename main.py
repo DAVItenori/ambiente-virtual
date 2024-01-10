@@ -23,7 +23,7 @@ CREDENCIALS = 'key.json'
 
 
 def Insert_SQL(df): 
-        driver = 'msodbcsql17_lib64_libmsodbcsql-17.10.so.5.1'
+        driver = '/opt/microsoft/msodbcsql17/lib64/libmsodbcsql-17.4.so.1.1'
         client = storage.Client.from_service_account_json(CREDENCIALS)
         current_path_directory = os.getcwd()
         bucket = client.get_bucket(BUCKET_NAME)
