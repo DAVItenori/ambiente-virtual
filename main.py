@@ -139,4 +139,4 @@ def webhook():
 
 
 if __name__ == '__main__':
-    app.run(use_reloader=False,debug = False)
+    app.run(host = '0.0.0.0',use_reloader=False,debug = True)
